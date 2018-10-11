@@ -1,9 +1,9 @@
 require 'spec_helper'
 
 describe Admin::CategoriesController do 
-    describe "new_edit with id" do 
+    describe "new" do 
         it "Save category should redirect to new" do 
-            get :new_or_edit
+            get :new
             assigns(:categories).should_not == nil 
         end
     end
